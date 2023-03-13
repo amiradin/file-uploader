@@ -67,6 +67,11 @@ input[type=file] {
     overflow: hidden;
 }
 
+.preview-image.removing {
+    transform: scale(0);
+    transition: transform .3s;
+}
+
 .preview-image img {
     display: block;
     width: 180px;
@@ -102,7 +107,6 @@ input[type=file] {
 }
 
 .preview-info {
-
     position: absolute;
     right: 0;
     bottom: -30px;
